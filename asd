@@ -12,7 +12,7 @@
  * @invite zqRpUyepHh
  */
 
-/* Sorce Code */
+/* Source Code */
 @import url(https://nfld99.github.io/Better-Discord/Source_Code/Master_Code.css);
 /* Use Chat Bubbles By Shiz */
 @import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Chat_Bubbles/No.css);
@@ -40,15 +40,179 @@
 @import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Full_Width_Roles/Yes.css);
 /* Transparency Patch */ 
 @import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Transparency/No.css);
+/* Use Chat Bubbles By Shiz */
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Chat_Bubbles/No.css);
 
-/* === Accurate Sprite Frame Animator (teleporting effect) === */
+:root {
+  --Main-Colour: rgba(255,255,255,1);
+  --Background-Colour: rgba(0,0,0,1);
+  --Secondary-Background-Colour: rgba(0,0,0,.3);
+  --Secondary-Main-Colour: rgba(255,255,255,0.5);
+  --Text-Shadow-Colour: rgba(0,0,0,.65);
+  --Scroller-Colour: rgba(255,255,255,0);
+  --Notification-Colour: rgba(255,255,255,1);
+  --Chat-Input-Background: rgba(0,0,0,0);
+  --Chat-Input-Colour: var(--Main-Colour);
+  --Unread-Message-1: var(--Main-Colour);
+  --Unread-Message-2: var(--Background-Colour);
+  --Chat-Background: url("https://raw.githubusercontent.com/Ceikros/CeiCss/main/Sprites/Fleeting_Fireworks_sprite_uncompressed.jpg");
+  --Settings-Background: url("https://raw.githubusercontent.com/Ceikros/CeiCss/main/Sprites/Fleeting_Fireworks_sprite_uncompressed.jpg");
+  --Callout-Background: url("https://raw.githubusercontent.com/Ceikros/CeiCss/main/Sprites/Fleeting_Fireworks_sprite_uncompressed.jpg");
+  --Title-Background: var(--Background-Colour);
+  --Theme-Variant: " Akame Ga Kill_Mix";
+  --Chat-Font-Used: "Whitney";
+  --Chat-Font-Size: 15px;
+  --Unread-Message-Speed: 1.5s;
+  --Popout-Main-Colour: var(--Main-Colour);
+  --Popout-Background: url("https://raw.githubusercontent.com/Ceikros/CeiCss/main/Sprites/Fleeting_Fireworks_sprite_uncompressed.jpg");
+  --Popout-Text-Shadow-Colour: var(--Text-Shadow-Colour);
+  --Emote-Popout-Background: url("https://raw.githubusercontent.com/Ceikros/CeiCss/main/Sprites/Fleeting_Fireworks_sprite_uncompressed.jpg");
+  --File-Updated-2020-5-24: ;
+  --Settings-Dock-Colour: var(--Main-Colour);
+  --Timestamp-Colour: var(--Secondary-Main-Colour);
+  --Guild-Columns: 2;
+  --ServerFolders-Guild-Columns: var(--Guild-Columns);
+  --Chat-Avatar-Border-Radius: 35%;
+  --Background-Darkness: 0.3;
+}
+
+/* The rest of the code is unchanged and includes Discord style customizations */
+
+/* Customizations continued... */
+
+/*Removing Nitro gift button*/
+.button-3AYNKb{
+  display: none;
+}
+/* Change Avatar Size(also moves username for you) */
+.containerCozyBounded-1rKFAn .avatar-17mtNa .wrapper-3t9DeA {
+  width: 35px !important;
+  height: 35px !important;
+  background-size: cover;
+}
+/* Changes Border-radius Avatar */
+.avatar-VxgULZ {
+  border-radius: 15px;
+}
+.member-3W1lQa .avatarWrapper-3B0ndJ {
+  width: 35px!important;
+  height: 35px!important;
+}
+:not([style="opacity: 1; height: 56px; transform: scale(1);"]) > div > .listItemWrapper-3X98Pc > .wrapper-25eVIn:not(.circleButtonMask-2VNJsN){
+  -webkit-mask: none;
+  background: url(https://i.imgur.com/rymBnte.jpg) 50% 50%/cover!important;
+  background-color: var(--Secondary-Main-Colour)!important;
+}
+
+.homeIcon-tEMBK1 > path{
+  fill: transparent!important;
+}
+
+.member-3W1lQa {border-bottom: none;}
+.groupStart-23k01U { box-shadow: none; }
+
+.message-1PNnaP { margin-bottom: 0em; }
+.da-app .inner-zqa7da {
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px #ffffff;
+}
+
+.contentSelectedText-3wUhMi,.content-3at_AU,.contentSelectedVoice-1WDIBM, .channel-2QD9_O.selected-1HYmZZ a {
+  background-color: var(--Main-Colour);
+  border: 1px solid rgb(200, 200, 200);
+  border-bottom-color: #cccccc;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-width: 2.5px;
+}
+.channel-2QD9_O.selected-1HYmZZ a { border: 0px; }
+
+.theme-dark .member-3W1lQa.popout-open .content-OzHfo4, 
+.theme-dark .member-3W1lQa.popout-open:hover .content-OzHfo4 {
+  background-color: var(--Main-Colour);
+  border: 1px solid rgb(200, 200, 200);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-width: 2.5px;
+  height: 40px;
+  width: 0px;
+}
+
+.container-1UB9sr {
+	background-color: var(--Main-Colour);
+	border: 1px solid rgb(200, 200, 200);
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.theme-dark .search .search-bar {
+  background-color: var(--Main-Colour);
+  border: 1px solid rgb(200, 200, 200);
+}
+
+.theme-dark .guildsAdd-21_IdK {
+  background: var(--Main-Colour);
+  border-color: rgb(200, 200, 200);
+  color: rgb(200, 200, 200);
+}
+
+.da-app .side-8zPYf6 .da-itemSelected, 
+.theme-dark #bd-settings-sidebar .ui-tab-bar-item.selected {
+  background-color: #e0e0e0;
+  border: 1px solid #bbbbbb;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.da-app .side-8zPYf6 .da-itemDefault:hover, 
+.da-app .da-wrapperHoveredText .da-content, 
+.da-app .da-channel:hover a, 
+.theme-dark #bd-settings-sidebar .ui-tab-bar-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #bbbbbb;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.theme-dark .member-3W1lQa:hover .content-OzHfo4 {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #bbbbbb;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 40px;
+  width: 0px;
+}
+
+/* === Fleeting Fireworks Sprite Background Animation === */
 body {
   background: url("https://raw.githubusercontent.com/Ceikros/CeiCss/main/Sprites/Fleeting_Fireworks_sprite_uncompressed.jpg") no-repeat !important;
-  background-size: 12800px 4320px !important; /* Adjusted for sprite size */
-  animation: bgCycle 22s steps(319) infinite !important; /* Changed to steps(319) for teleport effect */
+  background-size: 2000% 1600% !important;
+  animation: bgCycle 22s steps(319) infinite !important; /* Adjusted to steps(319) for teleporting effect */
 }
 
 @keyframes bgCycle {
   from { background-position: 0 0; }
-  to   { background-position: -12160px -4050px; } /* Adjusted for total frames */
+  to   { background-position: 100% 100%; }
+}
+
+/* === Accurate Sprite Frame Animator (one-frame viewport) === */
+body::before {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: 640px;
+  height: 360px; /* Adjusted height to match sprite dimensions */
+  transform: translate(-50%, -50%);
+  background: url("https://raw.githubusercontent.com/Ceikros/CeiCss/main/Sprites/Fleeting_Fireworks_sprite_uncompressed.jpg") no-repeat;
+  background-size: 12800px 4320px;
+  animation: bgCycle 22s steps(319) infinite; /* Adjusted to steps(319) for teleporting effect */
+  pointer-events: none;
+}
+
+@keyframes bgCycle {
+  from { background-position: 0 0; }
+  to   { background-position: -12160px -4050px; }
 }
