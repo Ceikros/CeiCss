@@ -1,18 +1,10 @@
 /** 
- * @name BlackOrWhite
+ * @name BlackOrWhite - Fleeting Fireworks
  * @author Ceiko, Shiz(Code)
- * @version version auto updates
- * @description A fixed version of something I dont remember having
- * @source https://nfld99.com/shiz.html
- * @website https://nfld99.com/
- * @patreon https://nfld99.com/patreon
- * @authorLink https://discordhub.com/profile/483413721876529174
- * @donate https://nfld99.com/paypal
- * @authorId 483413721876529174
- * @invite zqRpUyepHh
+ * @description A fixed version using accurate sprite animation over 22s
  */
 
-/* Sorce Code */
+/* Source Code */
 @import url(https://nfld99.github.io/Better-Discord/Source_Code/Master_Code.css);
 @import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Chat_Bubbles/No.css);
 @import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Animations/Yes.css);
@@ -40,18 +32,18 @@
   --Chat-Input-Colour: var(--Main-Colour);
   --Unread-Message-1: var(--Main-Colour);
   --Unread-Message-2: var(--Background-Colour);
-  --Chat-Background: url("https://raw.githubusercontent.com/Ceikros/CeiCss/main/Sprites/Fleeting_Fireworks_sprite_uncompressed.jpg");
-  --Settings-Background: url("https://raw.githubusercontent.com/Ceikros/CeiCss/main/Sprites/Fleeting_Fireworks_sprite_uncompressed.jpg");
-  --Callout-Background: url("https://raw.githubusercontent.com/Ceikros/CeiCss/main/Sprites/Fleeting_Fireworks_sprite_uncompressed.jpg");
+  --Chat-Background: none;
+  --Settings-Background: none;
+  --Callout-Background: none;
   --Title-Background: var(--Background-Colour);
-  --Theme-Variant: " Akame Ga Kill_Mix";
+  --Theme-Variant: "Fleeting Fireworks";
   --Chat-Font-Used: "Whitney";
   --Chat-Font-Size: 15px;
   --Unread-Message-Speed: 1.5s;
   --Popout-Main-Colour: var(--Main-Colour);
-  --Popout-Background: url("https://raw.githubusercontent.com/Ceikros/CeiCss/main/Sprites/Fleeting_Fireworks_sprite_uncompressed.jpg");
+  --Popout-Background: none;
   --Popout-Text-Shadow-Colour: var(--Text-Shadow-Colour);
-  --Emote-Popout-Background: url("https://raw.githubusercontent.com/Ceikros/CeiCss/main/Sprites/Fleeting_Fireworks_sprite_uncompressed.jpg");
+  --Emote-Popout-Background: none;
   --Settings-Dock-Colour: var(--Main-Colour);
   --Timestamp-Colour: var(--Secondary-Main-Colour);
   --Guild-Columns: 2;
@@ -60,7 +52,6 @@
   --Background-Darkness: 0.3;
 }
 
-/* === Accurate Sprite Frame Animator (dual axis) === */
 body {
   background: none !important;
 }
@@ -68,12 +59,12 @@ body {
 body::before {
   content: "";
   position: fixed;
-  z-index: -1;
   top: 50%;
   left: 50%;
   width: 640px;
   height: 270px;
   transform: translate(-50%, -50%);
+  z-index: -1;
   pointer-events: none;
   background-image: url("https://raw.githubusercontent.com/Ceikros/CeiCss/main/Sprites/Fleeting_Fireworks_sprite_uncompressed.jpg");
   background-size: 12800px 4320px;
