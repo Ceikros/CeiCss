@@ -13,3 +13,8 @@ If you are on mac, it's better to upload your skins in github and paste your the
 Example: (you should prefix which mode you are using just incase the theme doesnt go batshit)
 @dark https://raw.githubusercontent.com/Ceikros/CeiCss/refs/heads/main/BlackOrWhite.css
 @light https://raw.githubusercontent.com/Ceikros/CeiCss/refs/heads/main/BlackOrWhite.css
+
+Where to upload backgrounds? (Images or Gifs)
+catbox.moe (upto 200mb)
+github (max is 25mb)
+discord (if you have nitro)
