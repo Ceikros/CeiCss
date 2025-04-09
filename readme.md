@@ -11,7 +11,9 @@ Go to vencord or betterdiscord
 
 If you are on mac, it's better to upload your skins in github and paste your theme in the Online Themes section.
 Example: (you should prefix which mode you are using just incase the theme doesnt go batshit)
+
 @dark https://raw.githubusercontent.com/Ceikros/CeiCss/refs/heads/main/BlackOrWhite.css
+
 @light https://raw.githubusercontent.com/Ceikros/CeiCss/refs/heads/main/BlackOrWhite.css
 
 Where to upload backgrounds? (Images or Gifs)
