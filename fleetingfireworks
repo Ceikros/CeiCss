@@ -1,0 +1,46 @@
+
+/**
+ * @name Fleeting Fireworks
+ * @author Ceiko, Shiz(Code)
+ * @version version auto updates
+ * @description A fixed version with a full animated background using a 320-frame sprite sheet
+ * @source https://nfld99.com/shiz.html
+ * @website https://nfld99.com/
+ * @patreon https://nfld99.com/patreon
+ * @authorLink https://discordhub.com/profile/483413721876529174
+ * @donate https://nfld99.com/paypal
+ * @authorId 483413721876529174
+ * @invite zqRpUyepHh
+ */
+
+/* Background override with animated sprite sheet */
+:root {
+  --Chat-Background: url("https://raw.githubusercontent.com/Ceikros/CeiCss/main/Sprites/Fleeting_Fireworks_sprite_uncompressed.jpg");
+  --Settings-Background: var(--Chat-Background);
+  --Callout-Background: var(--Chat-Background);
+  --Popout-Background: var(--Chat-Background);
+  --Emote-Popout-Background: var(--Chat-Background);
+}
+
+/* Transparent UI layers for animation visibility */
+body,
+.appMount-2yBXZl,
+.bg-1QIAus,
+.layers-3iHuyZ,
+.baseLayer-W6S8cY,
+.app-2CXKsg {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Animate the sprite sheet background */
+body {
+  background: url("https://raw.githubusercontent.com/Ceikros/CeiCss/main/Sprites/Fleeting_Fireworks_sprite_uncompressed.jpg") no-repeat;
+  background-size: 2000% 1600%;
+  animation: bgCycle 22s steps(320) infinite;
+}
+
+@keyframes bgCycle {
+  from { background-position: 0 0; }
+  to   { background-position: 100% 100%; }
+}
